@@ -30,11 +30,11 @@ self.window = [[PSCSpringKitWindow alloc] initWithFrame:[UIScreen mainScreen].bo
 
 ## Add to your project
 
-1. Add PSCSpringKit.xcodeproj as subproject
-2. Add PSCSpringKit's root folder to your project's header search paths
-3. Add PSCSpringKit to your Target's dependencies (Target >> Build Phases >> Target Dependencies)
-4. Add PSCSpringKit to your Target's linked frameworks (Target >> Summary >> Linked Frameworks and Libraries)
-5. Import "PSCSpringKit.h" either in Prefix.pch or in seperatly in any file you need
+1. Add PSCSpringKit.xcodeproj as subproject.
+2. Add PSCSpringKit's root folder to your project's header search paths.
+3. Add PSCSpringKit to your Target's dependencies (Target >> Build Phases >> Target Dependencies).
+4. Add PSCSpringKit to your Target's linked frameworks (Target >> Summary >> Linked Frameworks and Libraries).
+5. Import "PSCSpringKit.h" either in Prefix.pch or seperatly in any file you use it.
 
 ## Spring Mobile App Sensor
 
