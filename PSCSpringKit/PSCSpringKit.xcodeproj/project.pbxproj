@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		9996E3C9167F03A00060DF98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9996E3C8167F03A00060DF98 /* Foundation.framework */; };
 		9996E3CE167F03A00060DF98 /* PSCSpringKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9996E3CD167F03A00060DF98 /* PSCSpringKit.h */; };
-		9996E3D0167F03A00060DF98 /* PSCSpringKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9996E3CF167F03A00060DF98 /* PSCSpringKit.m */; };
 		99D204D6167F09F900640F0B /* spring-appsensor-fat-oewa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D204D5167F09F900640F0B /* spring-appsensor-fat-oewa.a */; };
+		99E588F516CE50F000AEE4D8 /* PSCSpringKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E588F216CE50F000AEE4D8 /* PSCSpringKitManager.m */; };
+		99E588F616CE50F000AEE4D8 /* PSCSpringKitWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E588F416CE50F000AEE4D8 /* PSCSpringKitWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +32,11 @@
 		9996E3C8167F03A00060DF98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9996E3CC167F03A00060DF98 /* PSCSpringKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSCSpringKit-Prefix.pch"; sourceTree = "<group>"; };
 		9996E3CD167F03A00060DF98 /* PSCSpringKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSCSpringKit.h; sourceTree = "<group>"; };
-		9996E3CF167F03A00060DF98 /* PSCSpringKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSCSpringKit.m; sourceTree = "<group>"; };
 		99D204D5167F09F900640F0B /* spring-appsensor-fat-oewa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "spring-appsensor-fat-oewa.a"; path = "../Spring/spring-appsensor-fat-oewa.a"; sourceTree = "<group>"; };
+		99E588F116CE50F000AEE4D8 /* PSCSpringKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCSpringKitManager.h; sourceTree = "<group>"; };
+		99E588F216CE50F000AEE4D8 /* PSCSpringKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCSpringKitManager.m; sourceTree = "<group>"; };
+		99E588F316CE50F000AEE4D8 /* PSCSpringKitWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCSpringKitWindow.h; sourceTree = "<group>"; };
+		99E588F416CE50F000AEE4D8 /* PSCSpringKitWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCSpringKitWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				9996E3CD167F03A00060DF98 /* PSCSpringKit.h */,
-				9996E3CF167F03A00060DF98 /* PSCSpringKit.m */,
+				99E588F116CE50F000AEE4D8 /* PSCSpringKitManager.h */,
+				99E588F216CE50F000AEE4D8 /* PSCSpringKitManager.m */,
+				99E588F316CE50F000AEE4D8 /* PSCSpringKitWindow.h */,
+				99E588F416CE50F000AEE4D8 /* PSCSpringKitWindow.m */,
 				9996E3CB167F03A00060DF98 /* Supporting Files */,
 			);
 			path = PSCSpringKit;
@@ -143,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9996E3D0167F03A00060DF98 /* PSCSpringKit.m in Sources */,
+				99E588F516CE50F000AEE4D8 /* PSCSpringKitManager.m in Sources */,
+				99E588F616CE50F000AEE4D8 /* PSCSpringKitWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
