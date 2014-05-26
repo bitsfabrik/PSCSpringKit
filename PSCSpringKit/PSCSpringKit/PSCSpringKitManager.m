@@ -33,10 +33,12 @@
 }
 
 - (void)performCountWithPath:(NSString *)path {
-    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:path forKey:@"cp"];
-    [self.spring commit:dict];
-    //});
+    if (path) {
+        //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:path forKey:@"cp"];
+        [self.spring commit:dict];
+        //});
+    }
 }
 
 - (BOOL)containsHitTestClass:(Class)hitTestClass {
