@@ -10,7 +10,7 @@
 
 @interface PSCSpringKitManager ()
 
-@property (nonatomic, strong) SpringOEWA *spring;
+@property (nonatomic, strong) Spring *spring;
 @property (nonatomic, strong) NSArray *hitTestClasses;
 
 @end
@@ -20,7 +20,7 @@
 - (id)initWithSite:(NSString *)site application:(NSString *)application path:(NSString *)path hitTestClasses:(NSArray *)hitTestClasses {
     self = [super init];
     if (self != nil) {
-        _spring = [[SpringOEWA alloc] initWithSiteAndApplication:site application:application];
+        _spring = [[Spring alloc] initWithSiteAndApplication:site application:application];
         _path = path;
         _hitTestClasses = hitTestClasses;
         [self performCount];

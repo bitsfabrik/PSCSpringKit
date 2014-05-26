@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392279B11933319E00EDCC56 /* spring-appsensor-fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 392279B01933319E00EDCC56 /* spring-appsensor-fat.a */; };
 		9996E3C9167F03A00060DF98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9996E3C8167F03A00060DF98 /* Foundation.framework */; };
 		9996E3CE167F03A00060DF98 /* PSCSpringKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9996E3CD167F03A00060DF98 /* PSCSpringKit.h */; };
-		99D204D6167F09F900640F0B /* spring-appsensor-fat-oewa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D204D5167F09F900640F0B /* spring-appsensor-fat-oewa.a */; };
 		99E588F516CE50F000AEE4D8 /* PSCSpringKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E588F216CE50F000AEE4D8 /* PSCSpringKitManager.m */; };
 		99E588F616CE50F000AEE4D8 /* PSCSpringKitWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E588F416CE50F000AEE4D8 /* PSCSpringKitWindow.m */; };
 /* End PBXBuildFile section */
@@ -28,11 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		392279B01933319E00EDCC56 /* spring-appsensor-fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "spring-appsensor-fat.a"; path = "../Spring/spring-appsensor-fat.a"; sourceTree = "<group>"; };
 		9996E3C5167F03A00060DF98 /* libPSCSpringKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPSCSpringKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9996E3C8167F03A00060DF98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9996E3CC167F03A00060DF98 /* PSCSpringKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSCSpringKit-Prefix.pch"; sourceTree = "<group>"; };
 		9996E3CD167F03A00060DF98 /* PSCSpringKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSCSpringKit.h; sourceTree = "<group>"; };
-		99D204D5167F09F900640F0B /* spring-appsensor-fat-oewa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "spring-appsensor-fat-oewa.a"; path = "../Spring/spring-appsensor-fat-oewa.a"; sourceTree = "<group>"; };
 		99E588F116CE50F000AEE4D8 /* PSCSpringKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCSpringKitManager.h; sourceTree = "<group>"; };
 		99E588F216CE50F000AEE4D8 /* PSCSpringKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCSpringKitManager.m; sourceTree = "<group>"; };
 		99E588F316CE50F000AEE4D8 /* PSCSpringKitWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCSpringKitWindow.h; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9996E3C9167F03A00060DF98 /* Foundation.framework in Frameworks */,
-				99D204D6167F09F900640F0B /* spring-appsensor-fat-oewa.a in Frameworks */,
+				392279B11933319E00EDCC56 /* spring-appsensor-fat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 		9996E3C7167F03A00060DF98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99D204D5167F09F900640F0B /* spring-appsensor-fat-oewa.a */,
+				392279B01933319E00EDCC56 /* spring-appsensor-fat.a */,
 				9996E3C8167F03A00060DF98 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -218,6 +218,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Spring\"",
+					/Users/matthias/Documents/Dev/PocketScience/TVThek_iOS/ios/external/PSCSpringKit/Spring,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -234,6 +235,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Spring\"",
+					/Users/matthias/Documents/Dev/PocketScience/TVThek_iOS/ios/external/PSCSpringKit/Spring,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
