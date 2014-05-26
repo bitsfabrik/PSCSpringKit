@@ -29,9 +29,13 @@
 }
 
 - (void)performCount {
+    [self performCountWithPath:self.path];
+}
+
+- (void)performCountWithPath:(NSString *)path {
     //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:self.path forKey:@"cp"];
-        [self.spring commit:dict];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:path forKey:@"cp"];
+    [self.spring commit:dict];
     //});
 }
 
@@ -62,6 +66,15 @@ static PSCSpringKitManager *sharedSpringKitManager = nil;
 + (void)performCount {
     if ([PSCSpringKitManager sharedSpringKitManager] != nil) {
         [[PSCSpringKitManager sharedSpringKitManager] performCount];
+    }
+    else {
+        NSLog(@"Shared PSCSpringKitManager not created yet!");
+    }
+}
+
++ (void)performCountWithPath:(NSString *)path {
+    if ([PSCSpringKitManager sharedSpringKitManager] != nil) {
+        [[PSCSpringKitManager sharedSpringKitManager] performCountWithPath:path];
     }
     else {
         NSLog(@"Shared PSCSpringKitManager not created yet!");

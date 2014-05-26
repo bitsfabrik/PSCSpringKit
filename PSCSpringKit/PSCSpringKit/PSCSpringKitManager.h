@@ -12,6 +12,7 @@
 
 + (PSCSpringKitManager *)createSharedSpringKitManagerWithSite:(NSString *)site application:(NSString *)application path:(NSString *)path hitTestClasses:(NSArray *)hitTestClasses;
 + (void)performCount;
++ (void)performCountWithPath:(NSString *)path;
 + (BOOL)containsHitTestClass:(Class)hitTestClass;
 
 @end
