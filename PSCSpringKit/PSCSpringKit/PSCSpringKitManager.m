@@ -50,6 +50,11 @@
     return NO;
 }
 
+- (void)debugMode:(BOOL)debug {
+    self.spring.debug = debug;
+    self.spring.offlineMode = debug;
+}
+
 ////////////////////////////////////////////////////////////////////////
 #pragma mark - Singleton definitons
 ////////////////////////////////////////////////////////////////////////
@@ -91,6 +96,15 @@ static PSCSpringKitManager *sharedSpringKitManager = nil;
         NSLog(@"Shared PSCSpringKitManager not created yet!");
     }
     return NO;
+}
+
++ (void)debugMode:(BOOL)debug {
+    if ([PSCSpringKitManager sharedSpringKitManager] != nil) {
+        [[PSCSpringKitManager sharedSpringKitManager] debugMode:debug];
+    }
+    else {
+        NSLog(@"Shared PSCSpringKitManager not created yet!");
+    }
 }
 
 @end

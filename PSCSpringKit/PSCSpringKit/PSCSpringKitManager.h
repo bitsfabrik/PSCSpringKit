@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 PocketScience GmbH. All rights reserved.
 //
 
+
 @interface PSCSpringKitManager : NSObject
 
 @property (nonatomic, strong) NSString *path;
@@ -14,5 +15,6 @@
 + (void)performCount;
 + (void)performCountWithPath:(NSString *)path;
 + (BOOL)containsHitTestClass:(Class)hitTestClass;
++ (void)debugMode:(BOOL)debug;
 
 @end
