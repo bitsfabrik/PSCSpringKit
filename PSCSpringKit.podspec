@@ -14,11 +14,13 @@ Pod::Spec.new do |s|
                           cp $PWD/Spring/spring-appsensor-fat.a $PWD/Spring/libspringappsensorfat.a
                           CMD
 
+  s.frameworks = 'AdSupport'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/**"'}
   s.requires_arc = true
   s.prefix_header_contents = '
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+    #import <AdSupport/AdSupport.h>
     #import "Spring.h"
 #endif'
 
