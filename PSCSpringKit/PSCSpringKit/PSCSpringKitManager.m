@@ -34,10 +34,13 @@
 
 - (void)performCountWithPath:(NSString *)path {
     if (path) {
-        //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:path forKey:@"cp"];
-        [self.spring commit:dict];
-        //});
+        ASIdentifierManager *adIdentManager = [ASIdentifierManager sharedManager];
+        if (adIdentManager.advertisingTrackingEnabled) {
+            //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:path forKey:@"cp"];
+            [self.spring commit:dict];
+            //});
+        }
     }
 }
 
